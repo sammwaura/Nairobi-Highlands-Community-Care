@@ -10,6 +10,10 @@
     text-transform: capitalize;
 }
 
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
 *::-webkit-scrollbar-track{
     background-color: transparent;
 }
@@ -20,10 +24,11 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6.5rem;
+    
 }
+
 
 section{
     padding: 7rem 2rem;
@@ -49,6 +54,7 @@ section{
     box-shadow:0.5rem 1rem rgba(0,0,0,.1);
     align-items: center;
     justify-content: space-between;
+    background-color: whitesmoke;
 }
 
 .header .active{
@@ -87,7 +93,7 @@ section{
     background: url(../images/landing.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .home .container .row .content{
@@ -97,7 +103,7 @@ section{
     margin-top: 100px;
     background-color: transparent;
     width: 50%;
-    color: wheat;
+    color:beige
 }
 
 .home .container .row .content h3{
@@ -112,6 +118,40 @@ section{
     font-size: 19px;
     font-weight: 400;
 }
+
+.about .container .row{
+    align-items: center;
+}
+
+.about .container .row .image img{
+    height: 50vh;
+    width: 70vh;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.about .container .row .content{
+    float: right;
+}
+
+.about .container .row .content span{
+    font-size: 5rem;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.about .container .row .content h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.about .container .row .content p{
+    font-size: 13px;
+    padding: 1rem;
+}
+
+
+
 
 
 
@@ -189,11 +229,80 @@ section{
         font-size: 2rem;
      }
 
+     .link-btn{
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        background-color: blueviolet;
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: whitesmoke;
+    }
+
+    
+.home .container .row .content{
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    margin-top: 100px;
+    background-color: transparent;
+    width: auto;
+    color: wheat;
+}
+
+    .home .container .row .content h3{
+        font-size: 22px;
+        font-weight: 600;
+        color: blueviolet;
+        background-color: transparent;
+        
+    }
+    
+    .home .container .row .content p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
 }
 @media (max-width:450px) {
     
     html{
         font-size: 50%;
+    }
+
+    .link-btn{
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        background-color: blueviolet;
+        cursor: pointer;
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+        
+    .home .container .row .content{
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
+        margin-top: 100px;
+        background-color: transparent;
+        width: auto;
+        color: wheat;
+    }
+
+    
+    .home .container .row .content h3{
+        font-size: 19px;
+        font-weight: 600;
+        color: blueviolet;
+        background-color: transparent;
+        
+    }
+    
+    .home .container .row .content p{
+        font-size: 10px;
+        font-weight: 400;
     }
 
 }
