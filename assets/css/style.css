@@ -33,6 +33,15 @@ html{
 section{
     padding: 7rem 2rem;
 }
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+}
 .link-btn{
     display: inline-block;
     padding: 1rem 3rem;
@@ -49,6 +58,7 @@ section{
 }
 
 .header{
+    margin-top: 10px;
     padding: 2rem;
     display: flex;
     box-shadow:0.5rem 1rem rgba(0,0,0,.1);
@@ -124,9 +134,9 @@ section{
 }
 
 .about .container .row .image img{
-    height: 50vh;
+    min-height: 50vh;
     width: 70vh;
-    margin-bottom: 4px;
+    margin-bottom: 5rem;
     float: left;
 }
 
@@ -141,14 +151,54 @@ section{
 }
 
 .about .container .row .content h3{
-    font-size: 2.3rem;
-    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 1rem;
+    
 }
 
 .about .container .row .content p{
-    font-size: 13px;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+
 }
+
+.services{
+    margin-top: 16rem;
+    background-color: aliceblue;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    background-color: violet;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.services .box-container .box img{
+    margin: 1rem 0;
+    height: 4rem;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: blueviolet;
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: white;
+
+}
+
 
 
 
@@ -303,6 +353,10 @@ section{
     .home .container .row .content p{
         font-size: 10px;
         font-weight: 400;
+    }
+
+    .heading{
+        font-size: 3rem;
     }
 
 }
