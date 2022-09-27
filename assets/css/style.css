@@ -35,7 +35,8 @@ section{
 }
 
 .heading{
-    text-align: center;
+    margin-top: 5rem;
+    /* text-align: center; */
     font-size: 4rem;
     color: blueviolet;
     text-transform: uppercase;
@@ -177,7 +178,7 @@ section{
 .services .box-container .box{
     text-align: center;
     padding: 2rem;
-    background-color: violet;
+    background-color: peachpuff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
 }
@@ -195,8 +196,58 @@ section{
 
 .services .box-container .box p{
     font-size: 1.5rem;
-    color: white;
+    color: black;
+}
 
+.footer{
+    background-color: peachpuff;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box{
+    text-align: center;
+}
+
+.footer .box-container .box i{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: blueviolet;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: blueviolet;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: black;
+    transform: none;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top:.2rem solid rgba(0,0,0,.1);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: blueviolet;
+    padding-bottom: 1rem;     
+}
+
+.footer .credit span{
+    color: black;
 }
 
 
