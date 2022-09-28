@@ -31,7 +31,7 @@ html{
 
 
 section{
-    padding: 7rem 2rem;
+    padding: 10rem 4rem;
 }
 
 .heading{
@@ -43,6 +43,38 @@ section{
     font-weight: bolder;
     margin-bottom: 5rem;
 }
+.heading2{
+    margin-top: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading2 h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: black;
+}
+marquee {
+    width: 600px;
+    background:  white;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
 .link-btn{
     display: inline-block;
     padding: 1rem 3rem;
@@ -84,6 +116,7 @@ section{
 }
 
 .header .nav a{
+    margin-right: 8px;
     margin:0 1rem;  
     font-size: 1.7rem;
     color: black;
@@ -198,6 +231,50 @@ section{
     font-size: 1.5rem;
     color: black;
 }
+
+.fundraise .donate-form{
+    padding: 2rem;
+    background: burlywood;
+}
+
+.fundraise .donate-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.fundraise .donate-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
+.fundraise .donate-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: .1rem solid black;
+}
+
+.fundraise .donate-form .flex .inputBox input:focus{
+    background: darkolivegreen;
+    color: burlywood;
+}
+
+.fundraise .donate-form .flex .inputBox input:focus::placeholder{
+    color: azure;
+}
+
+.fundraise .donate-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: darkolivegreen;
+}
+
+.fundraise .donate-form .btn{
+    margin-top: 2rem;
+}
+
 
 .footer{
     background-color: peachpuff;
