@@ -29,40 +29,8 @@ html{
     
 }
 
-
 section{
-    padding: 10rem 4rem;
-}
-
-.heading{
-    margin-top: 5rem;
-    /* text-align: center; */
-    font-size: 4rem;
-    color: blueviolet;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 5rem;
-}
-.heading2{
-    margin-top: 2rem;
-    background-size: cover !important;
-    background-position: center !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.heading2 h1{
-    font-size: 10rem;
-    text-transform: uppercase;
-    color: white;
-}
-
-.heading-title{
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: blueviolet;
+    padding: 8rem;
 }
 marquee {
     width: 600px;
@@ -75,6 +43,13 @@ marquee {
     color: blueviolet;
 }
 
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: blueviolet;
+}
 .link-btn{
     display: inline-block;
     padding: 1rem 3rem;
@@ -143,226 +118,158 @@ marquee {
 .home .container .row .content{
     justify-content: space-between;
     align-items: center;
-    height: 50vh;
-    margin-top: 100px;
+    height: 30vh;
+    margin-top: 10rem;
     background-color: transparent;
     width: 50%;
     color:beige
 }
 
 .home .container .row .content h3{
-    font-size: 30px;
-    font-weight: 600;
-    color: blueviolet;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
     background-color: transparent;
+    text-transform: capitalize;
     
 }
 
 .home .container .row .content p{
     font-size: 19px;
     font-weight: 400;
+    color: black;
+}
+/* about us*/
+.about .container{
+    background: linear-gradient(45deg, blueviolet, lightseagreen);
+    padding: 15px 9%;
 }
 
-.about .container .row{
-    align-items: center;
+.about .container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
 }
 
-.about .container .row .image img{
-    min-height: 50vh;
-    width: 70vh;
-    margin-bottom: 5rem;
-    float: left;
+.about .container .title{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
 }
-
-.about .container .row .content{
-    float: right;
-}
-
-.about .container .row .content span{
-    font-size: 5rem;
+.about .container .title h3{
+    font-size: 1.7rem;
     color: blueviolet;
-    font-weight: bolder;
+}
+.about .container .title p li{
+    font-size: 1rem;
 }
 
-.about .container .row .content h3{
-    font-size: 3rem;
-    margin-top: 1rem;
+
+/* programs*/
+.programs .box-container{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.programs .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+     background: linear-gradient(45deg, blueviolet, lightseagreen);
+    cursor: pointer;
+}
+
+.programs .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: blueviolet;
+    background-color: white;
+    margin-bottom: .5rem;
+}
+.programs .box-container .box h3{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.programs .box-container .box img{
+    width: 50%;
     
 }
 
 
-.about .container .row .content p{
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    line-height: 2;
-
-}
-
-.services{
-    margin-top: 16rem;
-    background-color: aliceblue;
-}
-
-.services .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
-}
-
-.services .box-container .box{
-    text-align: center;
-    padding: 2rem;
-    background-color: peachpuff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-}
-
-.services .box-container .box img{
-    margin: 1rem 0;
-    height: 4rem;
-}
-
-.services .box-container .box h3{
-    font-size: 2rem;
-    padding: 1rem 0;
-    color: blueviolet;
-}
-
-.services .box-container .box p{
-    font-size: 1.5rem;
-    color: black;
-}
 /* Gallery Section */
-.gallery{
-    padding: 50px 0;
-}
-.input{
-	display: none;
-}
-.container{
-	width: 100%;
-	text-align: center;
+.gallery .gallerycontainer{
+    position:relative;
+    min-height: 100vh;
+     background: linear-gradient(45deg, blueviolet, lightseagreen);
 }
 
-.container h1{
-	font-weight: bolder;
-	font-size: 4rem;
-	position: relative;
-	margin: 40px 0;
-    color: blueviolet;
-
+.gallery .gallerycontainer .imagecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
 }
 
-
-@keyframes animate{
-	0%{
-		width: 100px;
-	}
-	50%{
-		width: 200px;
-	}
-	100%{
-		width: 100px;
-	}
-}
-.top-content{
-	background: linear-gradient(to right, #ff105f,#ffad06);
-	width: 30%;
-	margin: 0 auto 30px auto;
-	height: 80px;
-	display: flex;
-	align-items: center;
-	border-radius: 6px;
-	box-shadow: 3px 3px 5px lightgray;
-
+.gallery .gallerycontainer .imagecontainer .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid white;
+    box-shadow: 0px 5px 15px black;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.top-content label{
-	display: inline-block;
-	height: 80%;
-	margin: 0 20px;
-	font-size: 25px;
-    font-weight: 700;
-    background: linear-gradient(to right, #ff105f,#ffad06);
-	cursor: pointer;
-	transition: .5s;
+.gallery .gallerycontainer .imagecontainer .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
 }
 
-.top-content label:hover{
-	text-decoration: underline;
-    color: cornsilk;
+.gallery .gallerycontainer .imagecontainer .image:hover img{
+    transform: scale(1.1);
 }
 
-.photo-gallery{
-	width: 90%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(4, 2fr);
-	grid-gap: 20px; 
+.gallery .gallerycontainer .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
 }
 
-.pic{
-	position: relative;
-	height: 230px;
-	border-radius: 10px;
-	box-shadow: 3px 3px 4px lightgray;
-	cursor: pointer;
-	transition: .5s;
-}
-.pic img{
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	transition: .5s;
+.gallery .gallerycontainer .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
 }
 
-.pic::before{
-	content: 'PHOTO GALLERY';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-size: 25px;
-	font-weight: bold;
-	width: 100%;
-	margin-top: -100px;
-	opacity: 0;
-	transition: .3s;
-	transition-delay: .2s;
-	z-index: 1;
+.gallery .gallerycontainer .popup-image img{
+    position: absolute;
+    top: 50px; left: 50px;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
 }
- 
- .pic::after{
- 	content: '';
- 	position: absolute;
- 	width: 100%;
- 	bottom: 0;
- 	left: 0;
- 	border-radius: 10px;
- 	height: 0%;
- 	background-color: rgba(0,0,0,.4);
- 	transition: .3s; 
- }
- 
 
-  #check2:checked ~ .event-container .photo-gallery .functions{
-  	transform: scale(1);
-  	opacity: 1;
-  	position: relative;
-
-  }
-
-   #check2:checked ~ .event-container .photo-gallery .consultancy,
-   #check2:checked ~ .event-container .photo-gallery .place{
-   	opacity: 0;
-   	transform: scale(0);
-   	position: absolute;
-   	transition: .0s;
-   }
 .fundraise .donate-form{
     padding: 2rem;
-    background: burlywood;
+     background: linear-gradient(45deg, blueviolet, lightseagreen);
 }
 
 .fundraise .donate-form .flex{
@@ -386,8 +293,8 @@ marquee {
 }
 
 .fundraise .donate-form .flex .inputBox input:focus{
-    background: darkolivegreen;
-    color: burlywood;
+    background: lightseagreen;
+    color: black;
 }
 
 .fundraise .donate-form .flex .inputBox input:focus::placeholder{
@@ -396,7 +303,7 @@ marquee {
 
 .fundraise .donate-form .flex .inputBox span{
     font-size: 1.5rem;
-    color: darkolivegreen;
+    color: lightseagreen;
 }
 
 .fundraise .donate-form .btn{
@@ -405,7 +312,7 @@ marquee {
 
 
 .footer{
-    background-color: peachpuff;
+    background: linear-gradient(45deg, blueviolet, lightseagreen);
 }
 
 .footer .box-container{
@@ -424,7 +331,7 @@ marquee {
     border-radius: 50%;
     line-height: 5rem;
     font-size: 2rem;
-    background-color: blueviolet;
+     background:  lightseagreen;
     color: white;
     margin-bottom: 1rem;
 }
@@ -432,7 +339,7 @@ marquee {
 .footer .box-container .box h3{
     font-size: 2rem;
     margin: 2rem 0;
-    color: blueviolet;
+    color: lightseagreen;
 }
 
 .footer .box-container .box p{
@@ -447,39 +354,13 @@ marquee {
     padding-top: 1rem;
     margin-top: 1rem;
     font-size: 1rem;
-    color: blueviolet;
+    color: lightseagreen;
     padding-bottom: 1rem;     
 }
 
 .footer .credit span{
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -518,7 +399,7 @@ marquee {
     .header .nav{
         position:absolute;
         top: 15%; left: 0; right: 0;
-        background-color: wheat;
+         background: linear-gradient(45deg, blueviolet, lightseagreen);
         border-top: .2rem solid rgba(0,0,0,.1);
         padding: 2rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -539,7 +420,7 @@ marquee {
         display: inline-block;
         padding: 1rem 2rem;
         border-radius: .5rem;
-        background-color: blueviolet;
+      background: linear-gradient(45deg, blueviolet, lightseagreen);
         cursor: pointer;
         font-size: 1.6rem;
         color: whitesmoke;
@@ -572,49 +453,77 @@ marquee {
 }
 @media (max-width:450px) {
     
-    html{
-        font-size: 50%;
-    }
-
-    .link-btn{
-        display: inline-block;
-        padding: 1rem 2rem;
-        border-radius: .5rem;
-        background-color: blueviolet;
-        cursor: pointer;
-        font-size: 1.4rem;
-        color: whitesmoke;
-    }
-
-        
-    .home .container .row .content{
-        justify-content: space-between;
-        align-items: center;
-        height: 50vh;
-        margin-top: 100px;
-        background-color: transparent;
-        width: auto;
-        color: wheat;
-    }
-
+        html{
+            font-size: 50%;
+        }
     
-    .home .container .row .content h3{
-        font-size: 19px;
-        font-weight: 600;
-        color: blueviolet;
-        background-color: transparent;
+        .link-btn{
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+             background: linear-gradient(45deg, blueviolet, lightseagreen);
+            cursor: pointer;
+            font-size: 1.4rem;
+            color: whitesmoke;
+        }
         
-    }
+        home{
+            background: url(../images/landing.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+        }
     
-    .home .container .row .content p{
-        font-size: 10px;
-        font-weight: 400;
-    }
+            
+        .home .container .row .content{
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh;
+            margin-top: 10px;
+            background-color: transparent;
+            width: auto;
+            color: black;
+        }
+    
+        
+        .home .container .row .content h3{
+            font-size: 19px;
+            font-weight: 600;
+            color: blueviolet;
+            background-color: transparent;
+            
+        }
+        
+        .home .container .row .content p{
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .heading{
+            font-size: 3rem;
+        }
+        .gallery{
+            padding: 30px 0;
+        }
+        .input{
+    	    display: none;
+        }
+        .container{
+    	    width: 50%;
+    	    text-align: center;
+        }
+        
+        .about .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            gap: 1.7rem;
+        }
 
-    .heading{
-        font-size: 3rem;
-    }
-
-}
-
-
+        .about .box-container .box{
+            padding: 2rem 1rem;
+            text-align: center;
+             background: linear-gradient(45deg, blueviolet, lightseagreen);
+            height: 30vh;
+            width: auto;
+         }
+        
+        }
